@@ -64,11 +64,11 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber === undefined){
-    return "sorry, we don't have a credit card on file for you."
+    return "Sorry, we don't have a credit card on file for you."
   }
   else {
     var cost = total()
     cart.splice(0, cart.length)
-    return `Your total cost is $${cost}, which will be charged to the card ${cardNumber}`
+    return `Your total cost is $${cost}, which will be charged to the card ${cardNumber}.`
   }
 }
